@@ -80,11 +80,13 @@ h2{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
   }
+
 .onglets{
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 60%;
 }
+
   .mobile-menu {
     position: absolute;
     right: 1.6rem;
@@ -123,12 +125,18 @@ h2{
 
 }
 
+p.looking{
+
+    line-height: 73px;
+    font-weight: 400;
+}
+
 .texte-accueil{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 60px;
+    font-size: 58px;
     font-family: 'Poppins', sans-serif;
     
 }
@@ -151,6 +159,7 @@ img{
     width: 100%;
     justify-content: center;
     align-items: center;
+
 }
 
 #this-is{
@@ -161,14 +170,13 @@ img{
     justify-content: center;
     align-items: center;
     margin: 80px;
-    padding-left: 8rem;
-    padding-right: 8rem;
     line-height: 2rem;
    
  
 }
 .me{
-    width: 50%;
+    width: 47%;
+    height: 180px;
     font-size: 3.5rem;
     padding-left: 50px;
     background: yellow;
@@ -178,11 +186,12 @@ img{
 
 .paragraph{
 
-    width: 50%;
-    font-size: 1.0rem;
+    font-size: 0.95rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
-
+    width: 50%;
+    padding-right: 200px;
+    font-weight: 100;
 }
 
 
