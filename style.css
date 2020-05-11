@@ -1,0 +1,557 @@
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62,5%;
+}
+/*-------------Général-------------*/
+
+p, h1, h2, h3, h4{
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    letter-spacing: normal;
+}
+
+i{
+
+    margin-left: 1rem;
+}
+
+/*-------------ACCUEIL-------------*/
+
+header  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+
+h1{
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+h2{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+.flexmenu {
+    width: 100%;
+    color: rgb(54, 54, 54);
+  }
+
+.flex {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0.5em;
+  }
+
+.menu {
+
+    display: none;
+    padding: 0;
+    font-weight: bold;
+  }
+
+
+.name:first-child {
+    display: inline-flex;
+    justify-content: left;
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    padding: 2.3rem;
+
+  }
+.menu a {
+    color: rgb(53, 53, 53);
+    text-decoration: none;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+  }
+.onglets{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+  .mobile-menu {
+    position: absolute;
+    right: 1.6rem;
+    top: 1.5rem;
+    width: 1.6em;
+  }
+  .menu-icon {
+    font-size: 2.0em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .hide {
+    display: none;
+  }
+  .show {
+    display: inline-flex;
+  }
+
+/*-------------ACCUEIL-------------*/
+
+
+
+.acceuil{
+
+
+    width: 100%;
+    height: 100vh;
+}
+
+
+.description{
+
+    display: flex;
+    height: 80vh;
+
+
+}
+
+.texte-accueil{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+img{
+    
+    width: 100%;
+}
+
+.portrait{
+
+    display: flex;
+    width: 50%;
+}
+
+/*-------------THIS IS ME-------------*/
+#this-is-me{
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#this-is{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    line-height: 2rem;
+   
+ 
+}
+.me{
+    width: 50%;
+    font-size: 3.5rem;
+    padding-left: 50px;
+    background: yellow;
+}
+
+
+
+.paragraph{
+
+    width: 50%;
+    font-size: 1.0rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+
+}
+
+
+.texte-description{
+    width: 100%;
+    font-weight: 200;
+    font-size: 1.7rem;
+    padding-top: 90px;
+}
+
+.this{
+
+    width: 50%;
+    font-size: 2.1rem;
+    padding-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    line-height: 4rem;
+
+}
+
+button{
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*-------------Addvise-------------*/
+
+
+#advise{
+    width: 100%;
+    display: flex;
+ 
+    justify-content: flex-end;
+  
+}
+
+.photo{
+    width: 40%;
+}
+
+/*-------------Texte Compagnies-------------*/
+
+
+.advise-companies{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -12rem;
+}
+
+.texte{
+    width: 50%;
+    background-color: #F4F4F4;
+    margin: -5rem;
+}
+
+h3{
+
+    font-size: 3.2rem;
+    font-weight: 100;
+    padding-top: 3rem;
+    padding-left: 3rem;
+}
+
+p.edit{
+
+    width: 100%;
+    font-size: 1.0rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: start;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    line-height: 2rem;
+
+}
+
+button{
+
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    background: none;
+}
+
+/*-------------Clients-------------*/
+
+#client-collab{
+
+        display: flex;
+        width: 50%;
+        align-items: center;
+        padding-left: 5rem;
+        background-color: yellow;
+        height: 9rem;
+        margin-top: 5rem;
+    }
+    
+.clients{
+    
+    font-size: 3rem;
+    margin-top: -10rem;
+    line-height: 3.5rem;
+    
+}
+
+
+.texte-collab{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texte-clients{
+
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 30rem;
+    margin-top: -2rem;
+   
+  
+}
+
+.les-partenaires{
+
+    margin: 0;
+    margin-left: 27rem;
+    margin-right: 27rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.partenaires{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    width: 100%;
+}
+
+.picto{
+
+    width: 140px;
+    height: 110px;
+}
+
+
+#blog{
+
+    width: 100%;
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.carte-blog{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.grid-section{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(./img/portrait.webp);
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+
+.blog-card{
+
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+
+
+
+
+
+
+
+
+#newsletter{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 2rem;
+}
+
+
+.footer{
+
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.mail{
+
+    text-align: center;
+    margin: 0;
+    
+}
+
+input{
+
+    width: 40rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 0;
+}
+
+.envoyer{
+
+
+    width: 40rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: yellow;
+    text-align: center;
+    margin: 0;
+
+    
+}
+
+
+  
+  @media screen and (min-width: 780px) {
+    
+.mobile-menu {
+      display: none;
+    }
+    
+.flex {
+      flex-direction: row;
+    }
+    .menu {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+  }
+  
+
+
+
+
+
+
+
+@media screen and (max-width:1000px){
+
+    .description{
+
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    
+    
+    }
+
+    .texte-accueil{
+ 
+        font-size: 1.5rem;
+
+    }
+
+
+    /*--------------------- THIS IS ME ---------------------*/
+.this-is-me{
+
+    height: 100vh; 
+    width: 100%;
+}
+
+#this-is{
+
+        margin: 0;
+        padding: 0;   
+       
+     
+    }
+
+.this{
+
+    text-align: center;
+    width: 100%;
+    
+}
+.me{
+    width: 80%;
+    font-size: 2.2rem;
+    margin-top: 4rem;
+}
+
+
+.paragraph{
+
+    width: 90%;
+    margin: 0;
+    padding: 2rem;
+
+}
+
+
+
+/*-------------Addvise-------------*/
+.advise-companies{
+
+    height: 200vh;
+    width: 100%;
+}
+
+
+
+.photo{
+    width: 80%;
+}
+
+
+.texte{
+    width: 100%;
+    background-color: #F4F4F4;
+    margin: -5rem;
+}
+.compaigns{
+
+font-size: 2rem;}
+}
+
+
+
+
+
