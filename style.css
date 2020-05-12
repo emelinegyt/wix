@@ -169,7 +169,7 @@ img{
 
 .portrait{
     position: sticky;
-    height: auto;
+    width: 52%;
 }
 
 /*-------------THIS IS ME-------------*/
