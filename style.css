@@ -46,7 +46,7 @@ h2{
 
 
 .flexmenu {
-    position: fixed;
+
     width: 100%;
     height: 15vh;
     color: rgb(54, 54, 54);
@@ -60,7 +60,7 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0.4em;
+    padding: 0.4rem;
   }
 
 .menu {
@@ -136,6 +136,7 @@ h2{
 
 .acceuil{
     width: 100%;
+   
 }
 
 
