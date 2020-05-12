@@ -15,7 +15,7 @@ p, h1, h2, h3, h4{
 
 i{
 
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 
 /*-------------ACCUEIL-------------*/
@@ -25,6 +25,7 @@ header  {
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+  
 }
 
 
@@ -46,7 +47,10 @@ h2{
 
 .flexmenu {
     width: 100%;
+    height: 15vh;
     color: rgb(54, 54, 54);
+    background-color: white;
+    
   }
 
 .flex {
@@ -54,21 +58,25 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0.5em;
+    padding: 0.4em;
+    margin-right: 40px;
   }
 
 .menu {
 
     display: none;
     padding: 0;
-    font-weight: bold;
+ 
   }
-
+.reseaux{
+    
+    padding-top: 51px;
+}
 
 .name:first-child {
     display: inline-flex;
     justify-content: left;
-    width: 50%;
+    width: 80%;
     font-family: 'Poppins', sans-serif;
     padding: 2.3rem;
 
@@ -76,15 +84,22 @@ h2{
 .menu a {
     color: rgb(53, 53, 53);
     text-decoration: none;
-    padding:0;
     font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
+    transition: 0.7s;
   }
+
+  .menu a:hover {
+    color: rgb(201, 201, 201);
+    transition: 0.7s;
+
+  }
+
 
 .onglets{
     display: flex;
     justify-content: space-around;
-    width: 60%;
+    width: 35%;
 }
 
   .mobile-menu {
@@ -93,9 +108,16 @@ h2{
     top: 1.5rem;
     width: 1.6em;
   }
+
+  .menu-icon.close{
+
+    font-size: 2em;
+    font-weight: lighter;
+    cursor: pointer;
+  }
   .menu-icon {
-    font-size: 2.0em;
-    font-weight: bold;
+    font-size: 3.5em;
+    font-weight: lighter;
     cursor: pointer;
   }
   .hide {
@@ -111,7 +133,6 @@ h2{
 
 .acceuil{
 
-
     width: 100%;
     height: 100vh;
 }
@@ -120,8 +141,6 @@ h2{
 .description{
 
     display: flex;
-    height: 80vh;
-
 
 }
 
@@ -149,7 +168,7 @@ img{
 .portrait{
 
     display: flex;
-    width: 50%;
+    width: 52%;
 }
 
 /*-------------THIS IS ME-------------*/
@@ -213,11 +232,28 @@ img{
 
 }
 
-button{
-
+.cv{
     display: flex;
     justify-content: flex-start;
+    align-items: flex-end;
+    width: 50%;
+    
 }
+
+button{
+
+
+    padding: 20px 60px 20px 60px;
+    margin: 100px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: 100;
+    font-size: 0.9rem;
+    background: none;
+    border: 1px solid black;
+    }
+    
+
 
 /*-------------Addvise-------------*/
 
@@ -225,7 +261,7 @@ button{
 #advise{
     width: 100%;
     display: flex;
- 
+    margin-top: 0px;
     justify-content: flex-end;
   
 }
@@ -251,7 +287,6 @@ button{
 .texte{
     width: 50%;
     background-color: #F4F4F4;
-    margin: -5rem;
 }
 
 h3{
@@ -276,17 +311,6 @@ p.edit{
 
 }
 
-button{
-
-    display: flex;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    text-align: center;
-    margin-left: 4rem;
-    margin-bottom: 2rem;
-    background: none;
-}
 
 /*-------------Clients-------------*/
 
@@ -294,11 +318,12 @@ button{
 
         display: flex;
         width: 50%;
+        height: 100vh;
         align-items: center;
         padding-left: 5rem;
         background-color: yellow;
         height: 9rem;
-        margin-top: 5rem;
+        margin-top: 15rem;
     }
     
 .clients{
@@ -465,6 +490,7 @@ input{
     
 .flex {
       flex-direction: row;
+      
     }
     .menu {
       display: inline-flex;
@@ -472,6 +498,9 @@ input{
       justify-content: center;
       font-weight: bold;
     }
+
+
+
   }
   
 
@@ -483,7 +512,13 @@ input{
 
 @media screen and (max-width:1000px){
 
-    .description{
+ .portrait{
+
+    width: 100%;
+    
+ }
+
+.description{
 
         flex-wrap: wrap-reverse;
         justify-content: center;
@@ -491,11 +526,12 @@ input{
     
     }
 
-    .texte-accueil{
+.texte-accueil{
  
-        font-size: 1.5rem;
+        font-size: 2rem;
 
     }
+
 
 
     /*--------------------- THIS IS ME ---------------------*/
@@ -503,6 +539,7 @@ input{
 
     height: 100vh; 
     width: 100%;
+
 }
 
 #this-is{
@@ -517,12 +554,14 @@ input{
 
     text-align: center;
     width: 100%;
+   
     
 }
 .me{
     width: 80%;
     font-size: 2.2rem;
     margin-top: 4rem;
+    
 }
 
 
@@ -534,12 +573,29 @@ input{
 
 }
 
+/*-------------Addvise-------------*/
 
+
+#advise{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    justify-content: flex-end;
+  
+}
+
+.photo{
+    width: 100%;
+}
 
 /*-------------Addvise-------------*/
 .advise-companies{
 
-    height: 200vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -562,5 +618,23 @@ font-size: 2rem;}
 
 
 
+/*-------------Clients-------------*/
 
+#client-collab{
 
+    display: flex;
+    width: 80%;
+    padding-left: 4rem;
+    height: 7rem;
+}
+
+.les-partenaires{
+
+margin-left: 2.5rem;
+margin-right: 2.5rem;
+}
+
+.partenaires{
+display: flex;
+flex-wrap: wrap;
+}
