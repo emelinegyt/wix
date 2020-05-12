@@ -255,10 +255,16 @@ button{
     font-size: 0.9rem;
     background: none;
     border: 1px solid black;
+    transition: 0.5s;
     }
     
 
+button:hover{
 
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
 /*-------------Addvise-------------*/
 
 
