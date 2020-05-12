@@ -24,7 +24,7 @@ header  {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 2.0rem;
   
 }
 
@@ -40,17 +40,18 @@ h1{
 h2{
 
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 2.0rem;
     font-weight: normal;
 }
 
 
 .flexmenu {
-    position: sticky;
+    position: fixed;
     width: 100%;
     height: 15vh;
     color: rgb(54, 54, 54);
     background-color: #F4F4F4;
+    z-index: 3;
     
   }
 
@@ -60,7 +61,6 @@ h2{
     flex-direction: column;
     justify-content: flex-end;
     padding: 0.4em;
-    margin-right: 40px;
   }
 
 .menu {
@@ -80,6 +80,7 @@ h2{
     width: 80%;
     font-family: 'Poppins', sans-serif;
     padding: 2.3rem;
+    padding-left: 3.5rem;
 
   }
 .menu a {
@@ -100,24 +101,25 @@ h2{
 .onglets{
     display: flex;
     justify-content: space-around;
-    width: 35%;
+    width: 40%;
+    padding-right: 3rem;
 }
 
   .mobile-menu {
     position: absolute;
     right: 1.6rem;
     top: 1.5rem;
-    width: 1.6em;
+    width: 1.6rem;
   }
 
   .menu-icon.close{
 
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: lighter;
     cursor: pointer;
   }
   .menu-icon {
-    font-size: 3.5em;
+    font-size: 3.5rem;
     font-weight: lighter;
     cursor: pointer;
   }
@@ -295,6 +297,7 @@ button:hover{
 .texte{
     width: 50%;
     background-color: #F4F4F4;
+    padding-bottom: 1rem;
 }
 
 h3{
@@ -391,6 +394,26 @@ p.edit{
 }
 
 
+
+
+/*-------------BLOG-------------*/
+.date{
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    
+}
+
+.jour{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.8rem;
+}
+
 #blog{
 
     width: 100%;
@@ -413,6 +436,7 @@ p.edit{
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-image: url(./img/portrait.webp);
     width: 20rem;
@@ -421,7 +445,9 @@ p.edit{
     margin-left: 2rem;
     margin-bottom: 5rem;
     margin-top: 5rem;
+  
 }
+
 
 
 .blog-card{
@@ -433,7 +459,6 @@ p.edit{
     font-size: 1.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-
 }
 
 
@@ -453,6 +478,7 @@ p.edit{
     align-items: center;
     background-color: black;
     padding: 2rem;
+    margin-top: 1rem;
 }
 
 
@@ -494,7 +520,8 @@ input{
 
   
 @media screen and (min-width: 780px) {
-    
+
+
 .mobile-menu {
       display: none;
     }
@@ -508,6 +535,7 @@ input{
       align-items: center;
       justify-content: center;
       font-weight: bold;
+
     }
 
 
@@ -522,7 +550,14 @@ input{
 
 
 @media screen and (max-width:1000px){
+   
+.onglets{
 
+        flex-direction: column;
+}  
+
+
+  
  .portrait{
 
     width: 100%;
@@ -572,13 +607,6 @@ input{
    
     
 }
-.me{
-    width: 80%;
-    font-size: 2.2rem;
-    margin-top: 4rem;
-    
-}
-
 
 .paragraph{
 
@@ -645,7 +673,7 @@ button.get{
     display: flex;
     width: 80%;
     padding-left: 4rem;
-    height: 7rem;
+    height: -8rem;
 }
 
 .les-partenaires{
@@ -659,6 +687,45 @@ text-align: justify;
 display: flex;
 flex-wrap: wrap;
 }
+
+
+
+/*-------------Blog-------------*/
+
+
+.carte-blog{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.grid-section{
+
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    background-image: url(./img/portrait.webp);
+    background-size: cover;
+    margin: 0;
+}
+
+
+.blog-card{
+
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+
 
 /*-------------Newletter-------------*/
 
