@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 62,5%;
-    overflow-x: hidden;
+    
 }
 /*-------------Général-------------*/
 
@@ -20,16 +20,6 @@ i{
 }
 
 /*-------------ACCUEIL-------------*/
-
-header  {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2.0rem;
-  
-}
-
-
 
 h1{
 
@@ -49,7 +39,6 @@ h2{
 .flexmenu {
 
     width: 100%;
-    height: 15vh;
     color: rgb(54, 54, 54);
     background-color: #F4F4F4;
     z-index: 3;
@@ -144,7 +133,7 @@ h2{
 .description{
 
     display: flex;
-    height: 100vh;
+    height: 100%;
     background-color: #F4F4F4;
 
 }
@@ -288,7 +277,7 @@ button:hover{
 .advise-companies{
 
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -334,7 +323,7 @@ p.edit{
 
         display: flex;
         width: 50%;
-        height: 100vh;
+        height: 100%;
         align-items: center;
         padding-left: 5rem;
         background-color: #F0FF02;
@@ -521,7 +510,7 @@ input{
 
 
   
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1000px) {
 
 
 .mobile-menu {
@@ -532,7 +521,8 @@ input{
       flex-direction: row;
       
     }
-    .menu {
+
+.menu {
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -550,19 +540,22 @@ input{
 
 
 
-
 @media screen and (max-width:1000px){
    
 .onglets{
 
-        flex-direction: column;
-}  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+ 
 
 
   
  .portrait{
 
-    width: 100%;
+    width: 80%;
     
  }
 
@@ -576,16 +569,15 @@ input{
 
 .texte-accueil{
  
-        font-size: 2rem;
+        font-size: 3.5rem;
+        line-height: 0rem;
 
     }
-
-
 
     /*--------------------- THIS IS ME ---------------------*/
 .this-is-me{
 
-    height: 100vh; 
+    height: 100%; 
     width: 100%;
 
 }
@@ -601,8 +593,8 @@ input{
 .this{
 
     text-align: justify;
-    width: 100%;
-    padding-left: 50px;
+    width: 90%;
+    padding-left: 30px;
     font-size: 2rem;
     padding-bottom: 2rem;
     padding-top: 0;
@@ -636,7 +628,7 @@ input{
 /*-------------Addvise-------------*/
 .advise-companies{
 
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin-top: -50px;
 }
@@ -649,7 +641,10 @@ input{
 
 font-size: 2rem;
 }
+p.edit{
 
+    padding: 2rem;
+}
 .cv{
     width: 100%;
 
@@ -658,9 +653,9 @@ font-size: 2rem;
 }
 button{
 
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 0;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    margin-left: 1rem;
 
 }
 
@@ -672,24 +667,43 @@ button.get{
 
 #client-collab{
 
-    display: flex;
     width: 80%;
-    padding-left: 4rem;
-    height: -8rem;
+    align-items: center;
+    padding-left: 3rem;
+    height: 5rem;
+    }
+
+
+.clients{
+
+    font-size: 2rem;
+    padding: 0;
+    margin-top: -5rem;
+   
+
+}
+
+.texte-clients{
+
+    margin-top: -0.8rem;
 }
 
 .les-partenaires{
-
+padding-top: 3rem;
 margin-left: 2.5rem;
 margin-right: 2.5rem;
 text-align: justify;
 }
 
 .partenaires{
-display: flex;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.texte-clients{
+
+    margin-top: -0.8rem;
+}
 
 
 /*-------------Blog-------------*/
@@ -770,4 +784,36 @@ input{
 
     
 }
+}
+
+@media screen and (max-width:700px){
+
+
+    .portrait{
+
+        width: 100%;
+        
+     }
+    
+    .description{
+    
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+        
+        
+        }
+    
+    .texte-accueil{
+     
+            font-size: 2.5rem;
+            line-height: 0rem;
+            padding: 4rem;
+            margin-top: 2rem;
+    
+        }
+p.looking{
+
+    line-height: 3.5rem;
+}
+
 }
